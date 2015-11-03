@@ -27,8 +27,9 @@
 		B517FCFD1BE8FB890008ADEB /* PiList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PiList; sourceTree = BUILT_PRODUCTS_DIR; };
 		B517FD001BE8FB890008ADEB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B517FD0A1BE8FBE80008ADEB /* Dictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Dictionary.plist; sourceTree = "<group>"; };
-		B517FD0B1BE8FBE80008ADEB /* Example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Example.plist; sourceTree = "<group>"; };
 		B517FD0C1BE8FD850008ADEB /* AEXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AEXML.swift; path = ../Carthage/Checkouts/AEXML/Source/AEXML.swift; sourceTree = "<group>"; };
+		B517FD0F1BE92D4E0008ADEB /* Array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Array.plist; sourceTree = "<group>"; };
+		B517FD101BE92D960008ADEB /* Full-Example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Full-Example.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				B517FD0A1BE8FBE80008ADEB /* Dictionary.plist */,
-				B517FD0B1BE8FBE80008ADEB /* Example.plist */,
+				B517FD0F1BE92D4E0008ADEB /* Array.plist */,
+				B517FD101BE92D960008ADEB /* Full-Example.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
