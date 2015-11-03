@@ -43,11 +43,8 @@ func handleDictionary(content: [String : AnyObject]) {
       default: print("default")
 //    case val as Bool: print("Bool")
 //    case val as Bool: print("Bool")
-
     }
-
   }
-
 }
 
 
@@ -63,8 +60,8 @@ if arguments.count == 1 {
 }
 
 
-let arg0 = "/Users/konstantin/My_Projects/MyPods/PiList/"
-let arg1 = "Dictionary.plist"
+let arg0 = "/Users/konstantin/My_Projects/MyPods/PiList/PiList"
+let arg1 = "Resource/Dictionary.plist"
 
 //let arg0 = arguments[0]
 //let arg1 = arguments[1]
@@ -74,6 +71,11 @@ let filePath = rootPath.URLByAppendingPathComponent(arg1)
 
 print(rootPath)
 print(filePath)
+
+guard let data = NSData(contentsOfURL: filePath) else { exit(0) }
+let doc = try? AEXMLDocument(xmlData: data)
+print(doc?.xmlString)
+
 
 if let plist = NSDictionary(contentsOfURL: filePath) {
   print(plist)
