@@ -68,5 +68,16 @@ class StringTest: XCTestCase {
     XCTAssertEqual(abRange.length, 3)
   }
 
+// Lines
+
+  func testSplitByLines() {
+    let text = "One\n" + "Two\n" + "Line 3"
+    XCTAssertEqual(text.lines.count, 3)
+    XCTAssertEqual(text.lines, ["One", "Two", "Line 3"])
+
+    XCTAssertEqual("One line text".lines, ["One line text"])
+  }
+
+
   
 }

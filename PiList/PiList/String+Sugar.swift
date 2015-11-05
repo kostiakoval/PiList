@@ -15,6 +15,14 @@ public extension String {
   func rangeOf(x: String) -> Range<Index>? {
     return characters.rangeOf(x.characters)
   }
+
+  func splitByLines() -> [String] {
+    return characters.split("\n").map(String.init)
+  }
+
+  var lines: [String] {
+    return splitByLines()
+  }
 }
 
 public extension String.CharacterView {
@@ -42,4 +50,5 @@ public extension String.CharacterView {
     }
     return nil
   }
+
 }
