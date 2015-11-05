@@ -3,4 +3,4 @@ language: objective-c
 osx_image: xcode7.1
 
 script:
-- set -o pipefail && xcodebuild test -project PiList/PiList.xcodeproj -scheme PiListTest -sdk iphonesimulator -destination | xcpretty -c
+- set -o pipefail && xcodebuild test -project PiList/PiList.xcodeproj -scheme PiListTest | xcpretty -c
