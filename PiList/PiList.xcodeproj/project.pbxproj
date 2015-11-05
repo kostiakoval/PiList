@@ -7,9 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50C778F1BEBCD5200B21172 /* String+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C778E1BEBCD5200B21172 /* String+Sugar.swift */; };
+		B50C77971BEBCDA900B21172 /* String+SugarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C77961BEBCDA900B21172 /* String+SugarTest.swift */; };
+		B50C779E1BEBD1B500B21172 /* String+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C778E1BEBCD5200B21172 /* String+Sugar.swift */; };
+		B50C779F1BEBD1B500B21172 /* PListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD111BE930550008ADEB /* PListParser.swift */; };
+		B50C77A11BEBD7C300B21172 /* Range+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C77A01BEBD7C300B21172 /* Range+Sugar.swift */; };
+		B50C77A21BEBD7C500B21172 /* Range+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C77A01BEBD7C300B21172 /* Range+Sugar.swift */; };
 		B517FD011BE8FB890008ADEB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD001BE8FB890008ADEB /* main.swift */; };
-		B517FD0D1BE8FD850008ADEB /* AEXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD0C1BE8FD850008ADEB /* AEXML.swift */; };
+		B517FD121BE930550008ADEB /* PListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD111BE930550008ADEB /* PListParser.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B50C779C1BEBD13000B21172 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B517FCF51BE8FB890008ADEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B517FCFC1BE8FB890008ADEB;
+			remoteInfo = PiList;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B517FCFB1BE8FB890008ADEB /* CopyFiles */ = {
@@ -24,15 +40,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B50C778E1BEBCD5200B21172 /* String+Sugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Sugar.swift"; sourceTree = "<group>"; };
+		B50C77941BEBCDA900B21172 /* PiListTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiListTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50C77961BEBCDA900B21172 /* String+SugarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SugarTest.swift"; sourceTree = "<group>"; };
+		B50C77981BEBCDA900B21172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B50C77A01BEBD7C300B21172 /* Range+Sugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Range+Sugar.swift"; sourceTree = "<group>"; };
 		B517FCFD1BE8FB890008ADEB /* PiList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PiList; sourceTree = BUILT_PRODUCTS_DIR; };
 		B517FD001BE8FB890008ADEB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B517FD0A1BE8FBE80008ADEB /* Dictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Dictionary.plist; sourceTree = "<group>"; };
-		B517FD0C1BE8FD850008ADEB /* AEXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AEXML.swift; path = ../Carthage/Checkouts/AEXML/Source/AEXML.swift; sourceTree = "<group>"; };
 		B517FD0F1BE92D4E0008ADEB /* Array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Array.plist; sourceTree = "<group>"; };
 		B517FD101BE92D960008ADEB /* Full-Example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Full-Example.plist"; sourceTree = "<group>"; };
+		B517FD111BE930550008ADEB /* PListParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListParser.swift; sourceTree = "<group>"; };
+		B517FD131BE9361E0008ADEB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B50C77911BEBCDA900B21172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B517FCFA1BE8FB890008ADEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,12 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B50C77951BEBCDA900B21172 /* PiListTest */ = {
+			isa = PBXGroup;
+			children = (
+				B50C77961BEBCDA900B21172 /* String+SugarTest.swift */,
+				B50C77981BEBCDA900B21172 /* Info.plist */,
+			);
+			path = PiListTest;
+			sourceTree = "<group>";
+		};
 		B517FCF41BE8FB890008ADEB = {
 			isa = PBXGroup;
 			children = (
-				B517FD0E1BE8FD870008ADEB /* AEXML */,
+				B517FD131BE9361E0008ADEB /* MyPlayground.playground */,
 				B517FD091BE8FBE80008ADEB /* Resource */,
 				B517FCFF1BE8FB890008ADEB /* PiList */,
+				B50C77951BEBCDA900B21172 /* PiListTest */,
 				B517FCFE1BE8FB890008ADEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				B517FCFD1BE8FB890008ADEB /* PiList */,
+				B50C77941BEBCDA900B21172 /* PiListTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				B517FD001BE8FB890008ADEB /* main.swift */,
+				B50C778E1BEBCD5200B21172 /* String+Sugar.swift */,
+				B50C77A01BEBD7C300B21172 /* Range+Sugar.swift */,
+				B517FD111BE930550008ADEB /* PListParser.swift */,
 			);
 			path = PiList;
 			sourceTree = "<group>";
@@ -79,17 +122,27 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		B517FD0E1BE8FD870008ADEB /* AEXML */ = {
-			isa = PBXGroup;
-			children = (
-				B517FD0C1BE8FD850008ADEB /* AEXML.swift */,
-			);
-			name = AEXML;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B50C77931BEBCDA900B21172 /* PiListTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B50C77991BEBCDA900B21172 /* Build configuration list for PBXNativeTarget "PiListTest" */;
+			buildPhases = (
+				B50C77901BEBCDA900B21172 /* Sources */,
+				B50C77911BEBCDA900B21172 /* Frameworks */,
+				B50C77921BEBCDA900B21172 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B50C779D1BEBD13000B21172 /* PBXTargetDependency */,
+			);
+			name = PiListTest;
+			productName = PiListTest;
+			productReference = B50C77941BEBCDA900B21172 /* PiListTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B517FCFC1BE8FB890008ADEB /* PiList */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B517FD041BE8FB890008ADEB /* Build configuration list for PBXNativeTarget "PiList" */;
@@ -117,6 +170,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Kostiantyn Koval";
 				TargetAttributes = {
+					B50C77931BEBCDA900B21172 = {
+						CreatedOnToolsVersion = 7.1;
+					};
 					B517FCFC1BE8FB890008ADEB = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -135,23 +191,77 @@
 			projectRoot = "";
 			targets = (
 				B517FCFC1BE8FB890008ADEB /* PiList */,
+				B50C77931BEBCDA900B21172 /* PiListTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		B50C77921BEBCDA900B21172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B50C77901BEBCDA900B21172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50C779F1BEBD1B500B21172 /* PListParser.swift in Sources */,
+				B50C77971BEBCDA900B21172 /* String+SugarTest.swift in Sources */,
+				B50C77A21BEBD7C500B21172 /* Range+Sugar.swift in Sources */,
+				B50C779E1BEBD1B500B21172 /* String+Sugar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B517FCF91BE8FB890008ADEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B517FD121BE930550008ADEB /* PListParser.swift in Sources */,
+				B50C778F1BEBCD5200B21172 /* String+Sugar.swift in Sources */,
+				B50C77A11BEBD7C300B21172 /* Range+Sugar.swift in Sources */,
 				B517FD011BE8FB890008ADEB /* main.swift in Sources */,
-				B517FD0D1BE8FD850008ADEB /* AEXML.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B50C779D1BEBD13000B21172 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B517FCFC1BE8FB890008ADEB /* PiList */;
+			targetProxy = B50C779C1BEBD13000B21172 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		B50C779A1BEBCDA900B21172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PiListTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kk.PiListTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B50C779B1BEBCDA900B21172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PiListTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kk.PiListTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B517FD021BE8FB890008ADEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -249,6 +359,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B50C77991BEBCDA900B21172 /* Build configuration list for PBXNativeTarget "PiListTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50C779A1BEBCDA900B21172 /* Debug */,
+				B50C779B1BEBCDA900B21172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B517FCF81BE8FB890008ADEB /* Build configuration list for PBXProject "PiList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

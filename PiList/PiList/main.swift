@@ -10,14 +10,14 @@ import Foundation
 
 print("Hello PiList")
 
-func handleElement(element: AEXMLElement) {
-  print("name: \(element.name), value: \(element.value), children: \(element.children)")
-
-  for child in element.children {
-    handleElement(child)
-  }
-  print("")
-}
+//func handleElement(element: ) {
+//  print("name: \(element.name), value: \(element.value), children: \(element.children)")
+//
+//  for child in element.children {
+//    handleElement(child)
+//  }
+//  print("")
+//}
 
 //MARK:- Main
 
@@ -43,6 +43,15 @@ let filePath = rootPath.URLByAppendingPathComponent(arg1)
 //print(rootPath)
 //print(filePath)
 
+
+// PListParser:- XML
+guard let pListContent = try? String(contentsOfURL: filePath) else { exit(0) }
+PListParser.parse(pListContent)
+
+exit(0)
+
+/*
+// MARK:- XML
 guard let data = NSData(contentsOfURL: filePath) else {
   print("Can't read .plist file at: \(filePath)")
   exit(0)
@@ -56,4 +65,4 @@ do {
 
 } catch {
   print("Error: \(error)")
-}
+} */
