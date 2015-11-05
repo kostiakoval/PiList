@@ -13,6 +13,7 @@
 		B50C779F1BEBD1B500B21172 /* PListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD111BE930550008ADEB /* PListParser.swift */; };
 		B50C77A11BEBD7C300B21172 /* Range+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C77A01BEBD7C300B21172 /* Range+Sugar.swift */; };
 		B50C77A21BEBD7C500B21172 /* Range+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C77A01BEBD7C300B21172 /* Range+Sugar.swift */; };
+		B50C77A41BEBDF3100B21172 /* Range+SugarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C77A31BEBDF3100B21172 /* Range+SugarTest.swift */; };
 		B517FD011BE8FB890008ADEB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD001BE8FB890008ADEB /* main.swift */; };
 		B517FD121BE930550008ADEB /* PListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD111BE930550008ADEB /* PListParser.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		B50C77961BEBCDA900B21172 /* String+SugarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SugarTest.swift"; sourceTree = "<group>"; };
 		B50C77981BEBCDA900B21172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B50C77A01BEBD7C300B21172 /* Range+Sugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Range+Sugar.swift"; sourceTree = "<group>"; };
+		B50C77A31BEBDF3100B21172 /* Range+SugarTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Range+SugarTest.swift"; sourceTree = "<group>"; };
 		B517FCFD1BE8FB890008ADEB /* PiList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PiList; sourceTree = BUILT_PRODUCTS_DIR; };
 		B517FD001BE8FB890008ADEB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B517FD0A1BE8FBE80008ADEB /* Dictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Dictionary.plist; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				B50C77961BEBCDA900B21172 /* String+SugarTest.swift */,
+				B50C77A31BEBDF3100B21172 /* Range+SugarTest.swift */,
 				B50C77981BEBCDA900B21172 /* Info.plist */,
 			);
 			path = PiListTest;
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B50C779F1BEBD1B500B21172 /* PListParser.swift in Sources */,
+				B50C77A41BEBDF3100B21172 /* Range+SugarTest.swift in Sources */,
 				B50C77971BEBCDA900B21172 /* String+SugarTest.swift in Sources */,
 				B50C77A21BEBD7C500B21172 /* Range+Sugar.swift in Sources */,
 				B50C779E1BEBD1B500B21172 /* String+Sugar.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import XCTest
 
-class PiListTest: XCTestCase {
+class StringTest: XCTestCase {
 
 
   func testEmptyString() {
