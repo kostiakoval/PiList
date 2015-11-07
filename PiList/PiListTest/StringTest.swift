@@ -68,6 +68,17 @@ class StringTest: XCTestCase {
     XCTAssertEqual(abRange.length, 3)
   }
 
+//MARK: - Contains
+
+  func testContains() {
+    XCTAssertTrue("Hello Word".contains("Hello Word"))
+    XCTAssertTrue("Hello Word".contains("Hello"))
+    XCTAssertTrue("Hello Word".contains("Word"))
+
+    XCTAssertFalse("Hello Word".contains("1"))
+    XCTAssertFalse("Hello Word".contains("H1"))
+  }
+
 // Lines
 
   func testSplitByLines() {

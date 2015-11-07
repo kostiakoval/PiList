@@ -6,14 +6,14 @@
 //  Copyright © 2015 Kostiantyn Koval. All rights reserved.
 //
 
-import Foundation
-
-
-// MARK: - String
 public extension String {
 
   func rangeOf(x: String) -> Range<Index>? {
     return characters.rangeOf(x.characters)
+  }
+
+  public func contains(x: String) -> Bool {
+    return rangeOf(x) != nil
   }
 
   func splitByLines() -> [String] {

@@ -1,16 +1,13 @@
-//
-//  String+Sugar.swift
-//  PiList
-//
-//  Created by Kostiantyn Koval on 05/11/15.
-//  Copyright © 2015 Kostiantyn Koval. All rights reserved.
-//
 
 // MARK: - String
 public extension String {
 
   public func rangeOf(x: String) -> Range<Index>? {
     return characters.rangeOf(x.characters)
+  }
+
+  public func contains(x: String) -> Bool {
+    return rangeOf(x) != nil
   }
 
   public func splitByLines() -> [String] {
