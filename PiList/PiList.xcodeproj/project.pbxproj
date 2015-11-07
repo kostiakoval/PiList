@@ -16,6 +16,7 @@
 		B50C77A41BEBDF3100B21172 /* Range+SugarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C77A31BEBDF3100B21172 /* Range+SugarTest.swift */; };
 		B517FD011BE8FB890008ADEB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD001BE8FB890008ADEB /* main.swift */; };
 		B517FD121BE930550008ADEB /* PListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD111BE930550008ADEB /* PListParser.swift */; };
+		B5CE87AF1BEBED1F00AA3026 /* PList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE87AE1BEBED1F00AA3026 /* PList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		B517FD101BE92D960008ADEB /* Full-Example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Full-Example.plist"; sourceTree = "<group>"; };
 		B517FD111BE930550008ADEB /* PListParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListParser.swift; sourceTree = "<group>"; };
 		B517FD131BE9361E0008ADEB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		B5CE87AE1BEBED1F00AA3026 /* PList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PList.swift; sourceTree = "<group>"; };
+		B5CE87B01BEBEDAB00AA3026 /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +110,9 @@
 		B517FCFF1BE8FB890008ADEB /* PiList */ = {
 			isa = PBXGroup;
 			children = (
+				B5CE87AD1BEBED1100AA3026 /* Sugar */,
 				B517FD001BE8FB890008ADEB /* main.swift */,
-				B50C778E1BEBCD5200B21172 /* String+Sugar.swift */,
-				B50C77A01BEBD7C300B21172 /* Range+Sugar.swift */,
+				B5CE87AE1BEBED1F00AA3026 /* PList.swift */,
 				B517FD111BE930550008ADEB /* PListParser.swift */,
 			);
 			path = PiList;
@@ -120,9 +123,19 @@
 			children = (
 				B517FD0A1BE8FBE80008ADEB /* Dictionary.plist */,
 				B517FD0F1BE92D4E0008ADEB /* Array.plist */,
+				B5CE87B01BEBEDAB00AA3026 /* Test.plist */,
 				B517FD101BE92D960008ADEB /* Full-Example.plist */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		B5CE87AD1BEBED1100AA3026 /* Sugar */ = {
+			isa = PBXGroup;
+			children = (
+				B50C778E1BEBCD5200B21172 /* String+Sugar.swift */,
+				B50C77A01BEBD7C300B21172 /* Range+Sugar.swift */,
+			);
+			name = Sugar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +243,7 @@
 				B50C778F1BEBCD5200B21172 /* String+Sugar.swift in Sources */,
 				B50C77A11BEBD7C300B21172 /* Range+Sugar.swift in Sources */,
 				B517FD011BE8FB890008ADEB /* main.swift in Sources */,
+				B5CE87AF1BEBED1F00AA3026 /* PList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +384,7 @@
 				B50C779B1BEBCDA900B21172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B517FCF81BE8FB890008ADEB /* Build configuration list for PBXProject "PiList" */ = {
 			isa = XCConfigurationList;

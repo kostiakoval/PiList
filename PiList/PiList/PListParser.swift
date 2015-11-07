@@ -14,13 +14,6 @@ struct PListParser {
   }
 }
 
-
-struct PList {
-  let version: Double
-  let content: String
-}
-
-
 struct Tokenizer {
   let content: String
 
