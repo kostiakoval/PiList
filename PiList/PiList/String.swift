@@ -21,6 +21,11 @@ public extension String {
     return search.rangeOf(x.characters)
   }
 
+  public func rangeOf(x: String, inRange range: Range<Index>) -> Range<Index>? {
+    let search = characters.prefixUpTo(range.endIndex)
+    return search.rangeOf(x.characters, offset: startIndex.distanceTo(range.startIndex))
+  }
+
   //MARK: -
   public func contains(x: String) -> Bool {
     return rangeOf(x) != nil
