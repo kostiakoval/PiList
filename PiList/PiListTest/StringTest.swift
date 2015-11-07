@@ -88,6 +88,33 @@ class StringTest: XCTestCase {
     XCTAssertTrue(r2 == nil)
   }
 
+//MARK: - rangeOf: endAt:
+
+  func testRangeOfEndAt () {
+    let str = "Hello Word"
+
+    let r0 = str.rangeOf("Hello", endAt: str.startIndex)
+    XCTAssertNil(r0)
+
+    let r1 = str.rangeOf("Hello", endAt: str.startIndex.advancedBy(6))
+    XCTAssertNotNil(r1)
+
+    let range = str.startIndex...str.startIndex.advancedBy(4)
+    let r2 = str.rangeOf("Hello", endAt: str.endIndex)
+    XCTAssertEqual(r2, range)
+
+    let i = str.startIndex.advancedBy(5)
+    let r3 = str.rangeOf("Hello", endAt: i)
+    XCTAssertEqual(r3, range)
+
+    let r4 = str.rangeOf("Word", endAt: i)
+    XCTAssertNil(r4)
+
+    let range1 = str.startIndex.advancedBy(6)..<str.startIndex.advancedBy(10)
+    let r5 = str.rangeOf("Word", endAt: str.endIndex)
+    XCTAssertEqual(r5, range1)
+  }
+
 //MARK: - Contains
 
   func testContains() {
@@ -105,10 +132,10 @@ class StringTest: XCTestCase {
     let text = "One\n" + "Two\n" + "Line 3"
     XCTAssertEqual(text.lines.count, 3)
     XCTAssertEqual(text.lines, ["One", "Two", "Line 3"])
-
+    
     XCTAssertEqual("One line text".lines, ["One line text"])
   }
-
-
+  
+  
   
 }
