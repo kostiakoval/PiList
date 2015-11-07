@@ -16,6 +16,7 @@
 		B50C77A41BEBDF3100B21172 /* Range+SugarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C77A31BEBDF3100B21172 /* Range+SugarTest.swift */; };
 		B517FD011BE8FB890008ADEB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD001BE8FB890008ADEB /* main.swift */; };
 		B517FD121BE930550008ADEB /* PListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD111BE930550008ADEB /* PListParser.swift */; };
+		B5A3CC001BEDFB4200DAB6B0 /* PList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE87AE1BEBED1F00AA3026 /* PList.swift */; };
 		B5CE87AF1BEBED1F00AA3026 /* PList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE87AE1BEBED1F00AA3026 /* PList.swift */; };
 /* End PBXBuildFile section */
 
@@ -231,6 +232,7 @@
 				B50C77A41BEBDF3100B21172 /* Range+SugarTest.swift in Sources */,
 				B50C77971BEBCDA900B21172 /* String+SugarTest.swift in Sources */,
 				B50C77A21BEBD7C500B21172 /* Range+Sugar.swift in Sources */,
+				B5A3CC001BEDFB4200DAB6B0 /* PList.swift in Sources */,
 				B50C779E1BEBD1B500B21172 /* String+Sugar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
