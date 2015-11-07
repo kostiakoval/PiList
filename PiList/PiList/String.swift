@@ -12,6 +12,11 @@ public extension String {
     return characters.rangeOf(x.characters)
   }
 
+  public func rangeOf(x: String, starFrom: Index) -> Range<Index>? {
+    return characters.rangeOf(x.characters, offset: startIndex.distanceTo(starFrom))
+  }
+
+  //MARK: -
   public func contains(x: String) -> Bool {
     return rangeOf(x) != nil
   }
@@ -27,11 +32,10 @@ public extension String {
 
 public extension String.CharacterView {
 
-  func rangeOf(x: String.CharacterView) -> Range<Index>? {
+  func rangeOf(x: String.CharacterView, var offset: Int = 0) -> Range<Index>? {
 
     guard let first = x.first else { return nil }
-    var offset = 0
-    var search = self
+    var search = self.suffixFrom(startIndex.advancedBy(offset))
 
     while !search.isEmpty {
 
@@ -50,5 +54,4 @@ public extension String.CharacterView {
     }
     return nil
   }
-
 }

@@ -68,6 +68,26 @@ class StringTest: XCTestCase {
     XCTAssertEqual(abRange.length, 3)
   }
 
+//MARK: - RangeOf
+
+  func testRangeOfFrom() {
+    let str = "Hello Word"
+
+    let r = str.rangeOf("Word")
+    let r1 = str.rangeOf("Word", starFrom: str.startIndex.successor())
+    XCTAssertTrue(r1 != nil)
+    XCTAssertEqual(r, r1)
+  }
+
+  func testRangeOfFromNotFound() {
+    let str = "Hello Word"
+    let r1 = str.rangeOf("Hello", starFrom: str.startIndex.successor())
+    XCTAssertTrue(r1 == nil)
+
+    let r2 = str.rangeOf("Word", starFrom: str.startIndex.advancedBy(7))
+    XCTAssertTrue(r2 == nil)
+  }
+
 //MARK: - Contains
 
   func testContains() {
