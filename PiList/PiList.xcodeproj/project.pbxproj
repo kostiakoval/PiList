@@ -56,7 +56,7 @@
 		B517FD101BE92D960008ADEB /* Full-Example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Full-Example.plist"; sourceTree = "<group>"; };
 		B517FD111BE930550008ADEB /* PListParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListParser.swift; sourceTree = "<group>"; };
 		B517FD131BE9361E0008ADEB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
-		B5A3CC011BEDFC4600DAB6B0 /* String.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = String.playground; sourceTree = "<group>"; };
+		B5A3CC021BEE110F00DAB6B0 /* Play.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Play.playground; sourceTree = "<group>"; };
 		B5CE87AE1BEBED1F00AA3026 /* PList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PList.swift; sourceTree = "<group>"; };
 		B5CE87B01BEBEDAB00AA3026 /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,7 +92,7 @@
 		B517FCF41BE8FB890008ADEB = {
 			isa = PBXGroup;
 			children = (
-				B5A3CC011BEDFC4600DAB6B0 /* String.playground */,
+				B5A3CC021BEE110F00DAB6B0 /* Play.playground */,
 				B517FD131BE9361E0008ADEB /* MyPlayground.playground */,
 				B517FD091BE8FBE80008ADEB /* Resource */,
 				B517FCFF1BE8FB890008ADEB /* PiList */,

@@ -2,9 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>New item</key>
-	<string>&lt;Int&gt;10&lt;/Int&gt;</string>
-	<key>New item - 2</key>
+	<key>Bool Item</key>
+	<false/>
+	<key>Data Item</key>
+	<data>MjAxNS0xMS0wN1QxMDoxMjozOFo=</data>
+	<key>Date Item</key>
+	<date>2015-11-03T18:00:17Z</date>
+	<key>Int Number</key>
 	<integer>1</integer>
+	<key>Double Number</key>
+	<real>1.5</real>
+	<key>String Item</key>
+	<string>ABC</string>
+	<key>New item</key>
+	<string></string>
+	<key>Empty Array</key>
+	<array/>
+	<key>Empty Dictionary</key>
+	<dict/>
 </dict>
 </plist>

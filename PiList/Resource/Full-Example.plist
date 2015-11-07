@@ -8,6 +8,10 @@
 	<data>EjQ=</data>
 	<key>Date Item</key>
 	<date>2015-11-03T18:00:17Z</date>
+	<key>New item</key>
+	<integer>1</integer>
+	<key>New item - 2</key>
+	<real>1.5</real>
 	<key>String Item</key>
 	<string>ABC</string>
 	<key>Array Items</key>

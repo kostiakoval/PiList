@@ -3,7 +3,10 @@
 <plist version="1.0">
 <array>
 	<false/>
-	<integer>1</integer>
-	<string>ABC</string>
+	<true/>
+	<data>SGk=</data>
+	<date>2015-11-07T10:19:34Z</date>
+	<integer>0</integer>
+	<string>S</string>
 </array>
 </plist>
