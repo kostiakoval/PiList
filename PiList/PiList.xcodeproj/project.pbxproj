@@ -10,14 +10,18 @@
 		B50C778F1BEBCD5200B21172 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C778E1BEBCD5200B21172 /* String.swift */; };
 		B50C77971BEBCDA900B21172 /* StringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C77961BEBCDA900B21172 /* StringTest.swift */; };
 		B50C779E1BEBD1B500B21172 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C778E1BEBCD5200B21172 /* String.swift */; };
-		B50C779F1BEBD1B500B21172 /* PListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD111BE930550008ADEB /* PListParser.swift */; };
 		B50C77A11BEBD7C300B21172 /* Range+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C77A01BEBD7C300B21172 /* Range+Sugar.swift */; };
 		B50C77A21BEBD7C500B21172 /* Range+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C77A01BEBD7C300B21172 /* Range+Sugar.swift */; };
 		B50C77A41BEBDF3100B21172 /* Range+SugarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C77A31BEBDF3100B21172 /* Range+SugarTest.swift */; };
 		B517FD011BE8FB890008ADEB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD001BE8FB890008ADEB /* main.swift */; };
-		B517FD121BE930550008ADEB /* PListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517FD111BE930550008ADEB /* PListParser.swift */; };
-		B5A3CC001BEDFB4200DAB6B0 /* PList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE87AE1BEBED1F00AA3026 /* PList.swift */; };
-		B5CE87AF1BEBED1F00AA3026 /* PList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE87AE1BEBED1F00AA3026 /* PList.swift */; };
+		B5217C0E1BEF64B50064E039 /* PList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C0B1BEF64B50064E039 /* PList.swift */; };
+		B5217C0F1BEF64B50064E039 /* PList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C0B1BEF64B50064E039 /* PList.swift */; };
+		B5217C101BEF64B50064E039 /* PListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C0C1BEF64B50064E039 /* PListParser.swift */; };
+		B5217C111BEF64B50064E039 /* PListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C0C1BEF64B50064E039 /* PListParser.swift */; };
+		B5217C121BEF64B50064E039 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C0D1BEF64B50064E039 /* Tokenizer.swift */; };
+		B5217C131BEF64B50064E039 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C0D1BEF64B50064E039 /* Tokenizer.swift */; };
+		B5217C151BEF64C60064E039 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C141BEF64C60064E039 /* Types.swift */; };
+		B5217C161BEF64C60064E039 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C141BEF64C60064E039 /* Types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +58,12 @@
 		B517FD0A1BE8FBE80008ADEB /* Dictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Dictionary.plist; sourceTree = "<group>"; };
 		B517FD0F1BE92D4E0008ADEB /* Array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Array.plist; sourceTree = "<group>"; };
 		B517FD101BE92D960008ADEB /* Full-Example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Full-Example.plist"; sourceTree = "<group>"; };
-		B517FD111BE930550008ADEB /* PListParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListParser.swift; sourceTree = "<group>"; };
 		B517FD131BE9361E0008ADEB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		B5217C0B1BEF64B50064E039 /* PList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PList.swift; sourceTree = "<group>"; };
+		B5217C0C1BEF64B50064E039 /* PListParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListParser.swift; sourceTree = "<group>"; };
+		B5217C0D1BEF64B50064E039 /* Tokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		B5217C141BEF64C60064E039 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		B5A3CC021BEE110F00DAB6B0 /* Play.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Play.playground; sourceTree = "<group>"; };
-		B5CE87AE1BEBED1F00AA3026 /* PList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PList.swift; sourceTree = "<group>"; };
 		B5CE87B01BEBEDAB00AA3026 /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,10 +119,9 @@
 		B517FCFF1BE8FB890008ADEB /* PiList */ = {
 			isa = PBXGroup;
 			children = (
-				B5CE87AD1BEBED1100AA3026 /* Sugar */,
 				B517FD001BE8FB890008ADEB /* main.swift */,
-				B5CE87AE1BEBED1F00AA3026 /* PList.swift */,
-				B517FD111BE930550008ADEB /* PListParser.swift */,
+				B5217C0A1BEF64B50064E039 /* PiList */,
+				B5CE87AD1BEBED1100AA3026 /* Sugar */,
 			);
 			path = PiList;
 			sourceTree = "<group>";
@@ -130,6 +135,17 @@
 				B517FD101BE92D960008ADEB /* Full-Example.plist */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		B5217C0A1BEF64B50064E039 /* PiList */ = {
+			isa = PBXGroup;
+			children = (
+				B5217C141BEF64C60064E039 /* Types.swift */,
+				B5217C0B1BEF64B50064E039 /* PList.swift */,
+				B5217C0C1BEF64B50064E039 /* PListParser.swift */,
+				B5217C0D1BEF64B50064E039 /* Tokenizer.swift */,
+			);
+			path = PiList;
 			sourceTree = "<group>";
 		};
 		B5CE87AD1BEBED1100AA3026 /* Sugar */ = {
@@ -230,11 +246,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B50C779F1BEBD1B500B21172 /* PListParser.swift in Sources */,
+				B5217C131BEF64B50064E039 /* Tokenizer.swift in Sources */,
 				B50C77A41BEBDF3100B21172 /* Range+SugarTest.swift in Sources */,
+				B5217C0F1BEF64B50064E039 /* PList.swift in Sources */,
+				B5217C161BEF64C60064E039 /* Types.swift in Sources */,
 				B50C77971BEBCDA900B21172 /* StringTest.swift in Sources */,
 				B50C77A21BEBD7C500B21172 /* Range+Sugar.swift in Sources */,
-				B5A3CC001BEDFB4200DAB6B0 /* PList.swift in Sources */,
+				B5217C111BEF64B50064E039 /* PListParser.swift in Sources */,
 				B50C779E1BEBD1B500B21172 /* String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,11 +261,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B517FD121BE930550008ADEB /* PListParser.swift in Sources */,
 				B50C778F1BEBCD5200B21172 /* String.swift in Sources */,
 				B50C77A11BEBD7C300B21172 /* Range+Sugar.swift in Sources */,
 				B517FD011BE8FB890008ADEB /* main.swift in Sources */,
-				B5CE87AF1BEBED1F00AA3026 /* PList.swift in Sources */,
+				B5217C151BEF64C60064E039 /* Types.swift in Sources */,
+				B5217C101BEF64B50064E039 /* PListParser.swift in Sources */,
+				B5217C0E1BEF64B50064E039 /* PList.swift in Sources */,
+				B5217C121BEF64B50064E039 /* Tokenizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

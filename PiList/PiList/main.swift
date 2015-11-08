@@ -46,7 +46,7 @@ let filePath = rootPath.URLByAppendingPathComponent(arg1)
 
 // PListParser:- XML
 guard let pListContent = try? String(contentsOfURL: filePath) else { exit(0) }
-PListParser.parse(pListContent)
+let plist = try? PListParser.parse(pListContent)
 
 exit(0)
 

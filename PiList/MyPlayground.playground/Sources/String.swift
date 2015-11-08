@@ -6,11 +6,29 @@
 //  Copyright © 2015 Kostiantyn Koval. All rights reserved.
 //
 
-// MARK: - String
 public extension String {
 
   public func rangeOf(x: String) -> Range<Index>? {
     return characters.rangeOf(x.characters)
+  }
+
+  public func rangeOf(x: String, starFrom: Index) -> Range<Index>? {
+    return characters.rangeOf(x.characters, offset: startIndex.distanceTo(starFrom))
+  }
+
+  public func rangeOf(x: String, endAt: Index) -> Range<Index>? {
+    let search = characters.prefixUpTo(endAt)
+    return search.rangeOf(x.characters)
+  }
+
+  public func rangeOf(x: String, inRange range: Range<Index>) -> Range<Index>? {
+    let search = characters.prefixUpTo(range.endIndex)
+    return search.rangeOf(x.characters, offset: startIndex.distanceTo(range.startIndex))
+  }
+
+  //MARK: -
+  public func contains(x: String) -> Bool {
+    return rangeOf(x) != nil
   }
 
   public func splitByLines() -> [String] {
@@ -24,11 +42,10 @@ public extension String {
 
 public extension String.CharacterView {
 
-  public func rangeOf(x: String.CharacterView) -> Range<Index>? {
+  public func rangeOf(x: String.CharacterView, var offset: Int = 0) -> Range<Index>? {
 
     guard let first = x.first else { return nil }
-    var offset = 0
-    var search = self
+    var search = self.suffixFrom(startIndex.advancedBy(offset))
 
     while !search.isEmpty {
 
@@ -47,5 +64,4 @@ public extension String.CharacterView {
     }
     return nil
   }
-  
 }

@@ -1,24 +1,4 @@
 
-struct PList {
-  let version: Double
-  let content: String
-
-  let rootElement: ContainerType
-
-  init(version: Double, content: String) {
-    self.version = version
-    self.content = content
-
-    //FIXME:
-    rootElement = .Array
-  }
-}
-
-enum ContainerType: String {
-  case Dictionary = "dict"
-  case Array = "array"
-}
-
 enum ValueType: String {
   // Bool
   case BoolTrue = "true"
@@ -33,43 +13,22 @@ enum ValueType: String {
   case Double = "real"
 }
 
-struct Tokenizer {
-  private static let closeToken = ">"
-
-  static func get(content: String, token: String) -> String? {
-    let openToken = "<\(token)"
-
-    guard let
-      open = content.rangeOf(openToken),
-      close = content.rangeOf(closeToken) else { return nil }
-
-    open
-    close
-//    let tokenRange = open.startIndex..<close.startIndex
-    let a = content[open]
-    return a
-  }
+enum Error: ErrorType {
+  case Error
+  case InvalidVersion
 }
 
-struct PListParser {
-
-  static func parse(content: String) -> PList {
-
-    // Get <plist> tag and content
-    plistData(content)
-
-    let plist = PList(version: 1.0, content: content)
-    return plist
-  }
-
-  static func plistData(content: String) -> (version: Double, content: String) {
-    let plistToken = Tokenizer.get(content, token: "plist")
-    return (0, "")
-  }
-}
 
 let array = Bundle.plist("Array")!
-PListParser.parse(array)
+let p = try! PListParser.parse(array)
+p.version
+print(p.content)
+
+
+
+
+
+
 
 
 
