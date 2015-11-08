@@ -11,3 +11,29 @@ public enum ContainerType: String {
   case Array = "array"
 }
 
+
+enum ValueType: String {
+  // Bool
+  case BoolTrue = "true"
+  case BoolFalse = "false"
+
+  case Data = "data"
+  case Date = "date"
+  case String = "string"
+
+  //Number
+  case Int = "integer"
+  case Double = "real"
+}
+
+
+public protocol Element {
+
+  var name: String {get}
+  var type: Any {get}
+  var content: String {get}
+  var children: [Element] {get}
+}
+
+
+

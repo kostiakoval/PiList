@@ -12,6 +12,11 @@ public struct PListParser {
     let data = try plistData(content)
     return PList(version: data.version, content: data.content)
   }
+
+  public static func getElement(content: String) throws -> String {
+    guard let token = Tokenizer.openToken(content) else { throw Error.Error }
+    return token
+  }
 }
 
 //MARK:- Private

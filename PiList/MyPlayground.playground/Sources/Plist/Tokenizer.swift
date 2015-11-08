@@ -11,7 +11,17 @@ enum Error: ErrorType {
 }
 
 struct Tokenizer {
-  private static let closeToken = ">"
+  private static let openSign = "<"
+  private static let closeSign = ">"
+
+  static func openToken(x: String) -> String? {
+
+    guard let
+      open = x.rangeOf(openSign),
+      close = x.rangeOf(closeSign, starFrom: open.endIndex) else { return nil }
+
+    return x[open.startIndex..<close.endIndex]
+  }
 
   //Open Token
   static func getRange(content: String, token: String) throws -> Range<String.Index> {
@@ -19,7 +29,7 @@ struct Tokenizer {
 
     guard let
       open = content.rangeOf(openToken),
-      close = content.rangeOf(closeToken, starFrom: open.endIndex) else { throw Error.Error }
+      close = content.rangeOf(closeSign, starFrom: open.endIndex) else { throw Error.Error }
 
     return open.startIndex..<close.endIndex
   }
