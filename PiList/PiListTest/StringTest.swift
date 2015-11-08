@@ -159,7 +159,16 @@ class StringTest: XCTestCase {
     
     XCTAssertEqual("One line text".lines, ["One line text"])
   }
-  
+
+// Trim  
+
+  func testTrim() {
+    XCTAssertEqual(str.trim("H"), "ello World")
+    XCTAssertEqual("AsomeA".trim("A"), "some")
+    XCTAssertEqual(" some ".trim(" "), "some")
+    XCTAssertEqual("some text some text some".trim("some"), " text some text ")
+  }
+
   
   
 }

@@ -31,12 +31,26 @@ public extension String {
     return rangeOf(x) != nil
   }
 
-  func splitByLines() -> [String] {
+  public func splitByLines() -> [String] {
     return characters.split("\n").map(String.init)
   }
 
-  var lines: [String] {
+  public var lines: [String] {
     return splitByLines()
+  }
+
+  //MARK:- Trim
+  public func trim(x: String) -> String {
+    var result = self
+    if self.hasPrefix(x) {
+      result.removeRange(startIndex..<x.endIndex)
+    }
+    if hasSuffix(x) {
+      let length = x.characters.count
+      let range = result.endIndex.advancedBy(-length)..<result.endIndex
+      result.removeRange(range)
+    }
+    return result
   }
 }
 
