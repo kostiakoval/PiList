@@ -22,6 +22,7 @@
 		B5217C131BEF64B50064E039 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C0D1BEF64B50064E039 /* Tokenizer.swift */; };
 		B5217C151BEF64C60064E039 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C141BEF64C60064E039 /* Types.swift */; };
 		B5217C161BEF64C60064E039 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C141BEF64C60064E039 /* Types.swift */; };
+		B5D975CB1BEF9BAF00E5CCB4 /* TokenizerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D975CA1BEF9BAF00E5CCB4 /* TokenizerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		B5217C141BEF64C60064E039 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		B5A3CC021BEE110F00DAB6B0 /* Play.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Play.playground; sourceTree = "<group>"; };
 		B5CE87B01BEBEDAB00AA3026 /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
+		B5D975CA1BEF9BAF00E5CCB4 /* TokenizerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenizerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B50C77961BEBCDA900B21172 /* StringTest.swift */,
+				B5D975CA1BEF9BAF00E5CCB4 /* TokenizerTest.swift */,
 				B50C77A31BEBDF3100B21172 /* Range+SugarTest.swift */,
 				B50C77981BEBCDA900B21172 /* Info.plist */,
 			);
@@ -248,6 +251,7 @@
 			files = (
 				B5217C131BEF64B50064E039 /* Tokenizer.swift in Sources */,
 				B50C77A41BEBDF3100B21172 /* Range+SugarTest.swift in Sources */,
+				B5D975CB1BEF9BAF00E5CCB4 /* TokenizerTest.swift in Sources */,
 				B5217C0F1BEF64B50064E039 /* PList.swift in Sources */,
 				B5217C161BEF64C60064E039 /* Types.swift in Sources */,
 				B50C77971BEBCDA900B21172 /* StringTest.swift in Sources */,
