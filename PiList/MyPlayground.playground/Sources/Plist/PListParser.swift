@@ -12,6 +12,10 @@ public struct PListParser {
     let data = try plistData(content)
     return PList(version: data.version, content: data.content)
   }
+}
+
+//MARK:- Private
+private extension PListParser {
 
   static func version(plist: String) throws -> Double  {
     guard let v = plist.rangeOf("version=\"") else { throw Error.Error }
@@ -25,8 +29,9 @@ public struct PListParser {
 
   static func plistData(x: String) throws -> (version: Double, content: String) {
     let openToken = try Tokenizer.get(x, token: "plist")
-    let v = try version(openToken.content)
     let closeToken = try Tokenizer.get(x, token: "/plist")
+
+    let v = try version(openToken.content)
 
     let range = openToken.range.endIndex..<closeToken.range.startIndex
     return (v, x[range])

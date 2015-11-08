@@ -13,7 +13,6 @@ enum Error: ErrorType {
 struct Tokenizer {
   private static let closeToken = ">"
 
-
   //Open Token
   static func getRange(content: String, token: String) throws -> Range<String.Index> {
     let openToken = "<\(token)"
