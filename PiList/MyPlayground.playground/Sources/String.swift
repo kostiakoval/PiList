@@ -8,7 +8,7 @@
 
 public extension String {
 
-  public func rangeOf(x: String) -> Range<Index>? {
+  func rangeOf(x: String) -> Range<Index>? {
     return characters.rangeOf(x.characters)
   }
 
@@ -31,18 +31,32 @@ public extension String {
     return rangeOf(x) != nil
   }
 
-  public func splitByLines() -> [String] {
+  func splitByLines() -> [String] {
     return characters.split("\n").map(String.init)
   }
 
-  public var lines: [String] {
+  var lines: [String] {
     return splitByLines()
+  }
+
+  //MARK:- Trim
+  public func trim(x: String) -> String {
+    var result = self
+    if self.hasPrefix(x) {
+      result.removeRange(startIndex..<x.endIndex)
+    }
+    if hasSuffix(x) {
+      let length = x.characters.count
+      let range = result.endIndex.advancedBy(-length)..<result.endIndex
+      result.removeRange(range)
+    }
+    return result
   }
 }
 
 public extension String.CharacterView {
 
-  public func rangeOf(x: String.CharacterView, var offset: Int = 0) -> Range<Index>? {
+  func rangeOf(x: String.CharacterView, var offset: Int = 0) -> Range<Index>? {
 
     guard let first = x.first else { return nil }
     var search = self.suffixFrom(startIndex.advancedBy(offset))
