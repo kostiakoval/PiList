@@ -22,11 +22,6 @@ struct Tokenizer {
     return find(x, open: Key.openSign, close: Key.closeSign)
   }
 
-  static func openTokenRange(x: String, token: String) throws -> Range<String.Index> {
-    guard let range = findRange(x, open: "<\(token)", close: Key.closeSign) else { throw Error.Error }
-    return range
-  }
-
   static func openToken(content: String, token: String) throws -> (content: String, range: Range<String.Index>) {
     let range = try openTokenRange(content, token: token)
     return (content[range], range)
@@ -36,11 +31,6 @@ struct Tokenizer {
 
   static func closeToken(x: String) -> String? {
     return find(x, open: Key.openClosingToken, close: Key.closeSign)
-  }
-
-  static func closeTokenRange(x: String, token: String) throws -> Range<String.Index> {
-    guard let range = findRange(x, open: "</\(token)", close: Key.closeSign) else { throw Error.Error }
-    return range
   }
 
   static func closeToken(content: String, token: String) throws -> (content: String, range: Range<String.Index>) {
@@ -65,6 +55,20 @@ private extension Tokenizer {
 
     return openRange.startIndex..<closeRange.endIndex
   }
+
+//MARK:- Open Token
+  private static func openTokenRange(x: String, token: String) throws -> Range<String.Index> {
+    guard let range = findRange(x, open: "<\(token)", close: Key.closeSign) else { throw Error.Error }
+    return range
+  }
+
+//MARK:- Close Token
+  private static func closeTokenRange(x: String, token: String) throws -> Range<String.Index> {
+    guard let range = findRange(x, open: "</\(token)", close: Key.closeSign) else { throw Error.Error }
+    return range
+  }
+  
+  
 }
 
 
