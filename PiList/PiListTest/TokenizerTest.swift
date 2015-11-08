@@ -20,9 +20,23 @@ class TokenizerTest: XCTestCase {
     super.tearDown()
   }
 
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+  func testOpenToken() {
+
+    let token = Tokenizer.openToken("<plist></plist>")
+    XCTAssertEqual(token!, "<plist>")
+
+    let token1 = Tokenizer.openToken("Some Text <plist>")
+    XCTAssertEqual(token1!, "<plist>")
+
+    let token2 = Tokenizer.openToken("Some Text plist>")
+    XCTAssertNil(token2)
+
+    let token3 = Tokenizer.openToken("<plist><dic>")
+    XCTAssertEqual(token3!, "<plist>")
+
+//FIXME: - Not working
+//    let token4 = Tokenizer.openToken("</plist><dic>")
+//    XCTAssertEqual(token4!, "<dic>")
   }
 
 }

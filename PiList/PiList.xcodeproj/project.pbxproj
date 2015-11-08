@@ -23,6 +23,11 @@
 		B5217C151BEF64C60064E039 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C141BEF64C60064E039 /* Types.swift */; };
 		B5217C161BEF64C60064E039 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5217C141BEF64C60064E039 /* Types.swift */; };
 		B5D975CB1BEF9BAF00E5CCB4 /* TokenizerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D975CA1BEF9BAF00E5CCB4 /* TokenizerTest.swift */; };
+		B5D975CD1BEF9F2F00E5CCB4 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D975CC1BEF9F2F00E5CCB4 /* Helpers.swift */; };
+		B5D975D71BEFA02300E5CCB4 /* Array.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D975D31BEFA02300E5CCB4 /* Array.plist */; };
+		B5D975D81BEFA02300E5CCB4 /* Dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D975D41BEFA02300E5CCB4 /* Dictionary.plist */; };
+		B5D975D91BEFA02300E5CCB4 /* Full-Example.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D975D51BEFA02300E5CCB4 /* Full-Example.plist */; };
+		B5D975DA1BEFA02300E5CCB4 /* Test.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D975D61BEFA02300E5CCB4 /* Test.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		B5A3CC021BEE110F00DAB6B0 /* Play.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Play.playground; sourceTree = "<group>"; };
 		B5CE87B01BEBEDAB00AA3026 /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
 		B5D975CA1BEF9BAF00E5CCB4 /* TokenizerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenizerTest.swift; sourceTree = "<group>"; };
+		B5D975CC1BEF9F2F00E5CCB4 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		B5D975D31BEFA02300E5CCB4 /* Array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Array.plist; sourceTree = "<group>"; };
+		B5D975D41BEFA02300E5CCB4 /* Dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Dictionary.plist; sourceTree = "<group>"; };
+		B5D975D51BEFA02300E5CCB4 /* Full-Example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Full-Example.plist"; sourceTree = "<group>"; };
+		B5D975D61BEFA02300E5CCB4 /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,8 @@
 		B50C77951BEBCDA900B21172 /* PiListTest */ = {
 			isa = PBXGroup;
 			children = (
+				B5D975D21BEFA02300E5CCB4 /* Resource */,
+				B5D975CC1BEF9F2F00E5CCB4 /* Helpers.swift */,
 				B50C77961BEBCDA900B21172 /* StringTest.swift */,
 				B5D975CA1BEF9BAF00E5CCB4 /* TokenizerTest.swift */,
 				B50C77A31BEBDF3100B21172 /* Range+SugarTest.swift */,
@@ -158,6 +170,17 @@
 				B50C77A01BEBD7C300B21172 /* Range+Sugar.swift */,
 			);
 			name = Sugar;
+			sourceTree = "<group>";
+		};
+		B5D975D21BEFA02300E5CCB4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B5D975D31BEFA02300E5CCB4 /* Array.plist */,
+				B5D975D41BEFA02300E5CCB4 /* Dictionary.plist */,
+				B5D975D51BEFA02300E5CCB4 /* Full-Example.plist */,
+				B5D975D61BEFA02300E5CCB4 /* Test.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D975D71BEFA02300E5CCB4 /* Array.plist in Resources */,
+				B5D975DA1BEFA02300E5CCB4 /* Test.plist in Resources */,
+				B5D975D91BEFA02300E5CCB4 /* Full-Example.plist in Resources */,
+				B5D975D81BEFA02300E5CCB4 /* Dictionary.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +279,7 @@
 				B5217C131BEF64B50064E039 /* Tokenizer.swift in Sources */,
 				B50C77A41BEBDF3100B21172 /* Range+SugarTest.swift in Sources */,
 				B5D975CB1BEF9BAF00E5CCB4 /* TokenizerTest.swift in Sources */,
+				B5D975CD1BEF9F2F00E5CCB4 /* Helpers.swift in Sources */,
 				B5217C0F1BEF64B50064E039 /* PList.swift in Sources */,
 				B5217C161BEF64C60064E039 /* Types.swift in Sources */,
 				B50C77971BEBCDA900B21172 /* StringTest.swift in Sources */,
