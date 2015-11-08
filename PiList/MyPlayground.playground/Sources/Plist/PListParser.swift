@@ -33,8 +33,9 @@ private extension PListParser {
   }
 
   static func plistData(x: String) throws -> (version: Double, content: String) {
-    let openToken = try Tokenizer.openToken(x, token: "plist")
-    let closeToken = try Tokenizer.closeToken(x, token: "plist")
+    guard let
+      openToken = Tokenizer.openToken(x, token: "plist"),
+      closeToken = Tokenizer.closeToken(x, token: "plist") else { throw Error.Error }
 
     let v = try version(openToken.content)
 
