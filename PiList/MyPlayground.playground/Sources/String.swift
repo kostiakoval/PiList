@@ -39,17 +39,21 @@ public extension String {
     return splitByLines()
   }
 
-  //MARK:- Trim
-  public func trim(x: String) -> String {
-    var result = self
+//MARK:- Trim
+  mutating func trimInPlace(x: String) {
     if self.hasPrefix(x) {
-      result.removeRange(startIndex..<x.endIndex)
+      removeRange(startIndex..<x.endIndex)
     }
     if hasSuffix(x) {
       let length = x.characters.count
-      let range = result.endIndex.advancedBy(-length)..<result.endIndex
-      result.removeRange(range)
+      let range = endIndex.advancedBy(-length)..<endIndex
+      removeRange(range)
     }
+  }
+
+  public func trim(x: String) -> String {
+    var result = self
+    result.trimInPlace(x)
     return result
   }
 }
