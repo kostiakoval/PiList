@@ -39,7 +39,7 @@ class TokenizerTest: XCTestCase {
 //    XCTAssertEqual(token4!, "<dic>")
   }
 
-  func testOpenSpefificToken() {
+  func testOpenSpecificToken() {
 
     let token = Tokenizer.openToken("<plist></plist>", token:"plist")
     XCTAssertEqual(token!.content, "<plist>")
@@ -65,4 +65,27 @@ class TokenizerTest: XCTestCase {
     XCTAssertEqual(str.substringFromIndex(token5!.range.endIndex), " <true/> </array>")
   }
 
+  func testCloseToken() {
+
+    let token = Tokenizer.closeToken("<plist></plist>")
+    XCTAssertEqual(token!, "</plist>")
+
+    let token2 = Tokenizer.closeToken("Some Text plist>")
+    XCTAssertNil(token2)
+  }
+
+  func testCloseSpecificToken() {
+
+    let token = Tokenizer.closeToken("<plist></plist>", token:"plist")
+    XCTAssertEqual(token!.content, "</plist>")
+
+    let token1 = Tokenizer.closeToken("Some Text </plist>", token:"plist")
+    XCTAssertEqual(token1!.content, "</plist>")
+
+    let token2 = Tokenizer.closeToken("Some Text plist>", token:"plist")
+    XCTAssertNil(token2)
+
+    let token3 = Tokenizer.closeToken("</plist></dic>", token:"dic")
+    XCTAssertEqual(token3!.content, "</dic>")
+  }
 }

@@ -38,7 +38,13 @@ let filePath = rootPath.URLByAppendingPathComponent(arg1)
 // PListParser:- XML
 guard let pListContent = try? String(contentsOfURL: filePath) else { exit(0) }
 do {
+
   let plist = try PListParser.parse(pListContent)
+  plist.version
+  plist.content
+
+  print(try! PListParser.getElement(plist.content))
+
 
   print(plist)
 } catch _ {
