@@ -27,6 +27,15 @@ struct Tokenizer {
     return (content[range], range)
   }
 
+  static func openTokenName(x: String) -> String? {
+    guard var characters = openToken(x)?.characters else { return nil }
+    characters.removeFirst()
+    characters.removeLast()
+
+    return String(characters)
+  }
+
+
 //MARK:- Close Token
 
   static func closeToken(x: String) -> String? {

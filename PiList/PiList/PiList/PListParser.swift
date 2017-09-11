@@ -13,10 +13,25 @@ public struct PListParser {
     return PList(version: data.version, content: data.content)
   }
 
-  public static func getElement(content: String) throws -> String {
-    guard let token = Tokenizer.openToken(content) else { throw Error.Error }
-    return token
+  public static func getElement(content: String) -> ElementType? {
+    guard let elementName = Tokenizer.openTokenName(content) else { return nil }
+
+    return element(elementName)
   }
+
+  public static func element(name: String) -> ElementType? {
+//    let element
+    let element = ContainerTypeTag.make(name)
+
+    return element
+  }
+
+  public static func rootElement(name: String) -> ContainerElementType? {
+    return nil
+  }
+
+
+
 }
 
 //MARK:- Private

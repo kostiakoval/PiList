@@ -11,14 +11,14 @@ public struct PList {
   public let version: Double
   public let content: String
 
-  public let rootElement: ContainerType
+//  public let rootElement: ContainerElementType
 
   public init(version: Double, content: String) {
     self.version = version
     self.content = content
 
     //FIXME:
-    rootElement = .Array
+//    rootElement = .Array
   }
 }
 
